@@ -13,6 +13,14 @@ interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
 }
 
+type PostRating = { userId: string; score: number };
+type PostComment = {
+  id: string;
+  content: string;
+  createdAt: Date;
+  user: { name: string | null; image: string | null };
+};
+
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { slug } = await params;
   
@@ -41,11 +49,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const totalRatings = post.ratings.length;
   const averageRating = totalRatings > 0 
-    ? post.ratings.reduce((acc: number, r: { score: number }) => acc + r.score, 0) / totalRatings
+    ? post.ratings.reduce((acc: number, r: PostRating) => acc + r.score, 0) / totalRatings
     : 0;
   
   const userRating = session 
-    ? post.ratings.find((r: { userId: string; score: number }) => r.userId === session.user.id)?.score
+    ? post.ratings.find((r: PostRating) => r.userId === session.user.id)?.score
     : 0;
 
   return (
@@ -91,7 +99,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <CommentForm postId={post.id} label="Leave a comment on this post" />
           
           <div className="grid gap-6">
-            {post.comments.map((comment: { id: string; content: string; createdAt: Date; user: { name: string | null; image: string | null } }) => (
+            {post.comments.map((comment: PostComment) => (
               <div key={comment.id} className="flex gap-4 p-5 rounded-2xl border border-border/50 bg-card/40 backdrop-blur-sm">
                 <div className="flex-shrink-0">
                   {comment.user.image ? (
