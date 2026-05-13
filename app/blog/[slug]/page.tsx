@@ -41,7 +41,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const totalRatings = post.ratings.length;
   const averageRating = totalRatings > 0 
-    ? post.ratings.reduce((acc, r) => acc + r.score, 0) / totalRatings 
+    ? post.ratings.reduce((acc: number, r) => acc + r.score, 0) / totalRatings
     : 0;
   
   const userRating = session 
