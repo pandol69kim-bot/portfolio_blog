@@ -45,7 +45,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     : 0;
   
   const userRating = session 
-    ? post.ratings.find(r => r.userId === session.user.id)?.score 
+    ? post.ratings.find((r: { userId: string; score: number }) => r.userId === session.user.id)?.score
     : 0;
 
   return (
