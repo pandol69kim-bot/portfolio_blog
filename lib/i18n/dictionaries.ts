@@ -1,0 +1,188 @@
+export type Locale = "ko" | "en" | "ja" | "zh";
+
+export const dictionaries = {
+  ko: {
+    nav: {
+      projects: "프로젝트",
+      blog: "블로그",
+      guestbook: "방명록",
+      about: "소개",
+      contact: "연락처",
+    },
+    hero: {
+      title: "팀의 확실한 성과를 위한 빠르고 명확한 인터페이스를 구축합니다.",
+      subtitle: "서울 기반의 풀스택 개발자 Marshall Han입니다.",
+      description: "Next.js와 TypeScript를 사용하여 신뢰할 수 있는 웹 제품을 설계하고 배포합니다. 명확한 흐름과 안정적인 시스템에 집중합니다.",
+      cta: "프로젝트 보기",
+    },
+    projects: {
+      title: "최근 프로젝트 성과",
+      eyebrow: "주요 작업물",
+      description: "복잡한 의사결정을 단순화하고, 올바른 정보를 노출하며, 제품이 성장함에 따라 지속 가능하게 작동하는 인터페이스를 지향합니다.",
+      caseStudy: "사례 분석",
+      startProject: "프로젝트 시작하기",
+    },
+    about: {
+      title: "강력한 프론트엔드 감각과 풀스택 구현 능력을 겸비하고 있습니다.",
+      description: "제품 전략, 인터페이스 디자인, 엔지니어링 실행이 겹치는 분야에서 최고의 성과를 냅니다. 모호한 요구사항을 명확한 빌드 계획으로 바꾸고 빠르게 실행합니다.",
+      capabilities: "나의 핵심 역량",
+      freelance: "프리랜서 및 제품 개발 협업 가능",
+    },
+    contact: {
+      title: "날카로운 감각과 깔끔한 결과물이 필요한 프로젝트가 있으신가요?",
+      description: "집중적인 프리랜서 작업, 장기적인 프론트엔드 협업, 제품 개발 참여에 열려 있습니다.",
+      emailTitle: "가장 빠른 방법: 이메일",
+      emailDesc: "진행하려는 제품 유형, 일정, 그리고 디자인 감각이 필요한 프론트엔드 개발인지, 엔드투엔드 구현인지 알려주시면 좋습니다.",
+    },
+    blog: {
+      title: "블로그",
+      newPost: "새 글 작성",
+      readMore: "더 읽어보기",
+      noPosts: "게시글이 없습니다.",
+    },
+    comments: {
+      title: "방명록",
+      subtitle: "인사말이나 피드백을 남겨주세요!",
+      signIn: "댓글을 남기려면 로그인해주세요.",
+      post: "댓글 등록",
+    },
+  },
+  en: {
+    nav: {
+      projects: "Projects",
+      blog: "Blog",
+      guestbook: "Guestbook",
+      about: "About",
+      contact: "Contact",
+    },
+    hero: {
+      title: "Building calm, fast interfaces for teams that need real outcomes.",
+      subtitle: "Marshall Han · Full-stack developer based in Seoul",
+      description: "I design and ship web products with Next.js, TypeScript, and a practical product mindset. The focus is simple: clear flows and stable systems.",
+      cta: "View Projects",
+    },
+    projects: {
+      title: "Recent product work with measurable payoff.",
+      eyebrow: "Selected Work",
+      description: "I prefer projects where the interface has to do real work: simplify decisions, surface the right information, and stay durable.",
+      caseStudy: "Case Study",
+      startProject: "Start a Project",
+    },
+    about: {
+      title: "Strong frontend instincts with full-stack delivery range.",
+      description: "I work best where product strategy, interface design, and engineering execution overlap. I turn loose requirements into a clear build plan.",
+      capabilities: "What I bring to a build",
+      freelance: "Available for focused freelance and product work",
+    },
+    contact: {
+      title: "Need a portfolio, product surface, or internal tool that feels sharp?",
+      description: "I am open to focused freelance work, long-term collaboration, and product engagements.",
+      emailTitle: "Fastest route: email",
+      emailDesc: "The best first message includes the product type, current timeline, and whether you need frontend delivery or end-to-end implementation.",
+    },
+    blog: {
+      title: "Blog",
+      newPost: "New Post",
+      readMore: "Read more",
+      noPosts: "No posts found.",
+    },
+    comments: {
+      title: "Guestbook",
+      subtitle: "Leave a comment to say hi or give feedback!",
+      signIn: "Please sign in to leave a comment.",
+      post: "Post Comment",
+    },
+  },
+  ja: {
+    nav: {
+      projects: "プロジェクト",
+      blog: "ブログ",
+      guestbook: "ゲストブック",
+      about: "紹介",
+      contact: "連絡先",
+    },
+    hero: {
+      title: "チームの確かな成果のために、迅速で明確なインターフェースを構築します。",
+      subtitle: "ソウルを拠点とするフルスタック開発者、マーシャル・ハンです。",
+      description: "Next.jsとTypeScriptを使用して、信頼できるWeb製品を設計・提供します。明確なフローと安定したシステムに注力しています。",
+      cta: "プロジェクトを見る",
+    },
+    projects: {
+      title: "最近の製品実績と測定可能な成果。",
+      eyebrow: "厳選された作品",
+      description: "意思決定を簡素化し、正しい情報を提示し、成長に合わせて機能し続けるインターフェースを重視しています。",
+      caseStudy: "事例紹介",
+      startProject: "プロジェクトを始める",
+    },
+    about: {
+      title: "強力なフロントエンドの直感とフルスタックの提供範囲を兼ね備えています。",
+      description: "製品戦略、インターフェース設計、エンジニアリングの実行が重なる部分で最高の能力を発揮します。曖昧な要件を明確なビルド計画に変え、迅速に実行します。",
+      capabilities: "私が提供できるもの",
+      freelance: "フリーランスおよび製品開発の依頼受付中",
+    },
+    contact: {
+      title: "鋭い感性とクリーンな成果物が必要なプロジェクトをお持ちですか？",
+      description: "集中したフリーランス作業、長期的なフロントエンドのコラボレーション、製品開発への参加を歓迎します。",
+      emailTitle: "最速の方法：メール",
+      emailDesc: "製品の種類、予定しているタイムライン、そしてデザイン重視のフロントエンド開発かエンドツーエンドの実装かをお知らせください。",
+    },
+    blog: {
+      title: "ブログ",
+      newPost: "新規投稿",
+      readMore: "もっと読む",
+      noPosts: "記事が見つかりません。",
+    },
+    comments: {
+      title: "ゲストブック",
+      subtitle: "挨拶やフィードバックを残してください！",
+      signIn: "コメントを残すにはログインしてください。",
+      post: "コメントを投稿",
+    },
+  },
+  zh: {
+    nav: {
+      projects: "项目",
+      blog: "博客",
+      guestbook: "留言板",
+      about: "关于",
+      contact: "联系方式",
+    },
+    hero: {
+      title: "为需要实际成果的团队构建冷静、快速的界面。",
+      subtitle: "Marshall Han · 总部位于首尔的全栈开发人员",
+      description: "我使用 Next.js、TypeScript 和实用的产品思维设计并交付 Web 产品。重点很简单：清晰的流程和稳定的系统。",
+      cta: "查看项目",
+    },
+    projects: {
+      title: "近期具有可衡量收益的产品工作。",
+      eyebrow: "精选作品",
+      description: "我更喜欢那些能简化决策、展示正确信息并随产品增长而保持耐用的界面。",
+      caseStudy: "案例分析",
+      startProject: "开始一个项目",
+    },
+    about: {
+      title: "拥有强大的前端直觉和全栈交付范围。",
+      description: "我最擅长产品策略、界面设计和工程执行重叠的领域。我将松散的需求转化为清晰的构建计划。",
+      capabilities: "我为构建带来的价值",
+      freelance: "可承接专注的自由职业和产品工作",
+    },
+    contact: {
+      title: "需要一个感觉敏锐且交付整洁的作品集、产品界面或内部工具吗？",
+      description: "我愿意接受专注的自由职业工作、长期前端协作和产品参与。",
+      emailTitle: "最快途径：电子邮件",
+      emailDesc: "最好的第一条信息包括产品类型、当前时间线，以及您是否需要前端交付或端到端实现。",
+    },
+    blog: {
+      title: "博客",
+      newPost: "发布新文章",
+      readMore: "阅读更多",
+      noPosts: "未找到文章。",
+    },
+    comments: {
+      title: "留言板",
+      subtitle: "留下评论打个招呼或提供反馈！",
+      signIn: "请登录后发表评论。",
+      post: "发表评论",
+    },
+  },
+};
