@@ -91,7 +91,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <CommentForm postId={post.id} label="Leave a comment on this post" />
           
           <div className="grid gap-6">
-            {post.comments.map((comment) => (
+            {post.comments.map((comment: { id: string; content: string; createdAt: Date; user: { name: string | null; image: string | null } }) => (
               <div key={comment.id} className="flex gap-4 p-5 rounded-2xl border border-border/50 bg-card/40 backdrop-blur-sm">
                 <div className="flex-shrink-0">
                   {comment.user.image ? (
